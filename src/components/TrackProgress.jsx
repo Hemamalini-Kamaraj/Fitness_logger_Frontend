@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
-import NavBar from './Navbar';
+import NavBar from '../components/NavBar';
 import { Container, Row, Dropdown, Col, Button } from 'react-bootstrap';
 import { DatePicker } from '@gsebdev/react-simple-datepicker';
 import { Line } from 'react-chartjs-2';

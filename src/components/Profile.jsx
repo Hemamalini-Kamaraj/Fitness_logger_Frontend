@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from './Navbar';
+import NavBar from '../components/NavBar';
 import Footer from './Footer';
 import { Button, Card, Col, Container, Form, FormControl, Row } from 'react-bootstrap';
 import user from '../assets/user.png'

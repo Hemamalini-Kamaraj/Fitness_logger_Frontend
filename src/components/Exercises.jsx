@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import NavBar from './Navbar'
+import NavBar from '../components/NavBar'
 import Footer from './Footer'
 import { Button, Card, Col, Container, Form, Row, Table } from 'react-bootstrap'
 import { PencilFill, PlusCircle, Trash3Fill } from 'react-bootstrap-icons'

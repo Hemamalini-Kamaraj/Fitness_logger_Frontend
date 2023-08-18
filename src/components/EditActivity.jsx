@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from './Navbar';
+import NavBar from '../components/NavBar';
 import Footer from './Footer';
 import baseUrl from '../api/api'
 import { Card, Col, Container, Form, InputGroup, Row, Button } from 'react-bootstrap';

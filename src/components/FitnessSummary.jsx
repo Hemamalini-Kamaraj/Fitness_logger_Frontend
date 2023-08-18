@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from './Navbar';
+import NavBar from '../components/NavBar';
 import Footer from './Footer';
 import { Container, Row, Col, Card, Button, Dropdown } from 'react-bootstrap';
 import { PencilFill, PlusCircle, TrashFill } from 'react-bootstrap-icons';
