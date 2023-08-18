@@ -52,9 +52,9 @@ function TrackProgress() {
     }
 
   return (
-    <div className='bg-white' >  
+    <div className='bg-white'>  
         <NavBar />
-          <Container className='mt-5 justify-content-center text-center mb-5 body1' style={{ width: "90rem" }}>
+          <Container className='mt-5 justify-content-center text-center mb-5 min-vh-100' style={{ width: "90rem" }}>
               <Row>
                   <Dropdown className='float-end'>
                         <Dropdown.Toggle id="dropdown-basic"className='fw-bold' style={{backgroundColor:"#866abd",border:"#866abd"}}>

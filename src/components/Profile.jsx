@@ -44,16 +44,12 @@ function Profile() {
     }
 
   return (
-    <div className='d-flex flex-column'>  
+    <div>  
           <NavBar />
-          <Container className='mt-5 justify-content-center text-center vh-100' style={{width:"35rem"}}>
-              {/* <Row>
-                  <h4 className='text-white fw-bold'>User Profile</h4>
-              </Row> */}
+          <Container className='mt-5 justify-content-center text-center min-vh-100' style={{width:"35rem"}}>
               <Row className='justify-content-center mt-4'>
                   <Card style={{width:"50rem"}} className='rounded-5'>
                       <Card.Header className='fs-5 rounded-5 mt-2 text-white fw-bold' style={{backgroundColor:"#270c42"}}>User Profile</Card.Header>
-                      {/* <Card.Img src={user} style={{width:"50px"}} className='text-center'></Card.Img> */}
                       <Card.Body>
                           <Card.Img src={user} style={{ width: "8rem" }}></Card.Img>
                           <h5 className='mt-2'>{name} <PencilFill style={{ marginTop: "-4px" }} onClick={()=> setToggle(false)}></PencilFill></h5>

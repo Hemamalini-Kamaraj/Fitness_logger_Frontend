@@ -64,9 +64,9 @@ function EditActivity() {
     }
 
   return (
-     <div className='d-flex flex-column bg'>  
+     <div>  
           <NavBar />
-          <Container className=' mt-5 justify-content-center text-center vh-100' style={{width:"90rem"}}>
+          <Container className=' mt-5 justify-content-center text-center min-vh-100' style={{width:"90rem"}}>
               <Row>
                   <h4 className='fw-bold text-white'>Record Activity</h4>
               </Row>

@@ -27,9 +27,6 @@ function NavBar() {
          <Nav className='me-auto'>
             <Nav.Link href="/exercises" className='fw-bold text-white'>Exercises</Nav.Link>
           </Nav>
-          {/* <Nav className='me-auto'>
-            <Nav.Link href="/recordActivity">Record Activity</Nav.Link>
-          </Nav> */}
           <Nav className='me-auto'>
             <Nav.Link href="/track-progress" className='fw-bold text-white'>Track Progress</Nav.Link>
           </Nav>

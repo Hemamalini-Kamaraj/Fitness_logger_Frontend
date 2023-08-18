@@ -35,7 +35,7 @@ function Signin() {
   }
 
   return (
-      <Container>
+      <Container fluid className="login">
         <Row className="vh-100 d-flex justify-content-center align-items-center">
           <Col md={8} lg={6} xs={12}>
             <Card>

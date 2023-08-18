@@ -29,7 +29,7 @@ function App() {
           <Route path='/fitness-summary' element={<FitnessSummary />} />
           <Route path='/track-progress' element={<TrackProgress />} />
         </Routes>
-      </div>
+     </div>
   )
 }
 

@@ -71,9 +71,9 @@ function FitnessSummary() {
     }
 
   return (
-    <div className='bg' >  
+    <div className='outer'>  
         <NavBar />
-        <Container className='mt-5 justify-content-center text-center mb-5 body1' style={{width:"90rem"}}>
+        <Container fluid className='mt-5 justify-content-center text-center mb-5 min-vh-100' style={{width:"90rem"}}>
             <Row>
                 <h4 className='text-white fw-bold'>Fitness Summary</h4>
             </Row>
@@ -152,6 +152,9 @@ function FitnessSummary() {
                     })
                 }
             </Row>
+            {/* <Row className='mb-5'>
+                Footer space
+            </Row> */}
         </Container>
         <Footer /> 
     </div>
