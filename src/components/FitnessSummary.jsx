@@ -113,11 +113,11 @@ function FitnessSummary() {
                 </Row> 
                 : ""
             }
-            <Row className='mt-5 justify-content-center d-flex flex-wrap gap-5' style={{}}>
+            <Row className='mt-5 justify-content-center d-flex flex-wrap gap-5'>
                     {
                       userWorkout.map((workout, index) => {
                           return(
-                            <Card key={index} className='rounded-5' style={{width:"22rem"}}>
+                                  <Card key={index} className='rounded-5' style={{width:"22rem"}}>
                                   <Card.Header className='fw-bold float-start fs-3 text-white mt-2 rounded-5' style={{backgroundColor:"#270c42"}}>{dayjs(workout.day).format("DD-MM-YYYY")}
                                       <Button className='float-end m-1' style={{ backgroundColor: "#866abd", border: "#866abd" }} onClick={(event) => handleEdit(workout._id,event)}>
                                           <PencilFill />
@@ -152,9 +152,6 @@ function FitnessSummary() {
                     })
                 }
             </Row>
-            {/* <Row className='mb-5'>
-                Footer space
-            </Row> */}
         </Container>
         <Footer /> 
     </div>

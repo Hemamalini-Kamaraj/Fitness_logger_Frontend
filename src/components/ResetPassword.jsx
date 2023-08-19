@@ -20,10 +20,7 @@ function ResetPassword() {
   const handleReset = async (e) => {
     e.preventDefault();
 
-    let users = await baseUrl.get("/user");
-    users = users.data;
-    users = users.find((user) => user.resetToken === resetToken);
-    if (users) {
+  
       if (password === cPassword) {
         baseUrl.patch(`/user/reset-password/${resetToken}`, {
           password: password,
@@ -33,10 +30,8 @@ function ResetPassword() {
       } else {
         alert("Password not matching");
       }
-    } else {
-      alert("Reset password link has been expired!");
-    }
-  };
+    } 
+  ;
   return (
     <Container fluid className="login">
         <Row className="vh-100 d-flex justify-content-center align-items-center">
@@ -51,12 +46,12 @@ function ResetPassword() {
                                  
                       <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Enter Password" />
+                        <Form.Control type="password" placeholder="Enter Password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
                       </Form.Group>
                      
                       <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
                         <Form.Label>Confirm Password</Form.Label>
-                        <Form.Control type="password" placeholder="ReEnter Password" />
+                        <Form.Control type="password" placeholder="Reenter Password" value={cPassword} onChange={(e)=>setcPassword(e.target.value)}/>
                       </Form.Group>
                                       
                       <div className="d-grid">

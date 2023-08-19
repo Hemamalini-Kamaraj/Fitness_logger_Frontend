@@ -30,6 +30,7 @@ function Signin() {
 
     } catch (error) {
       alert(`Check your email and password ${error} `);
+      console.log(error)
     }
   }
 
