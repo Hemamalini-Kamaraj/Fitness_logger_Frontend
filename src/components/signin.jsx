@@ -19,7 +19,6 @@ function Signin() {
     }
     
     try {
-
       const response = await baseUrl.post("/user/signin", credentials);
 
       const user = response.data;
@@ -87,8 +86,19 @@ function Signin() {
                 </div>
               </Card.Body>
             </Card>
+        </Col>
+        <Row className="justify-content-center">
+          <Col md={8} lg={6} xs={12}>
+              <Card className="justify-content-center">
+                <Card.Header className="text-center fw-bold">Sample Credentials</Card.Header>
+                <Card.Body className="text-center">
+                  <p>Username : hemamalini.ahkm@gmail.com</p>
+                  <p>Password: hema</p>
+                </Card.Body>
+              </Card>
           </Col>
-        </Row>
+         </Row>
+      </Row>
       </Container>
   );
 }
