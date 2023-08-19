@@ -71,11 +71,11 @@ function FitnessSummary() {
     }
 
   return (
-    <div className='outer'>  
+    <div className='d-flex flex-column justify-content-between min-vh-100'>  
         <NavBar />
-        <Container fluid className='mt-5 justify-content-center text-center mb-5 min-vh-100' style={{width:"90rem"}}>
+        <Container fluid className='justify-content-center text-center mb-5' style={{width:"90rem"}}>
             <Row>
-                <h4 className='text-white fw-bold'>Fitness Summary</h4>
+                <h2 className='text-white fw-bold mt-4'>Fitness Summary</h2>
             </Row>
             <Row>
                 <Col>
@@ -113,12 +113,12 @@ function FitnessSummary() {
                 </Row> 
                 : ""
             }
-            <Row className='justify-content-center' lg={[3]}>
+            <Row className='mt-5 justify-content-center d-flex flex-wrap gap-5' style={{}}>
                     {
                       userWorkout.map((workout, index) => {
                           return(
-                            <Card key={index} className='col-md-3 m-5 mb-2 rounded-5' >
-                                  <Card.Header className='fw-bold float-start fs-3 text-white mt-2 rounded-5' style={{backgroundColor:"#270c42"}}>{dayjs(workout.day.slice(0,10)).format("DD-MM-YYYY")}
+                            <Card key={index} className='rounded-5' style={{width:"22rem"}}>
+                                  <Card.Header className='fw-bold float-start fs-3 text-white mt-2 rounded-5' style={{backgroundColor:"#270c42"}}>{dayjs(workout.day).format("DD-MM-YYYY")}
                                       <Button className='float-end m-1' style={{ backgroundColor: "#866abd", border: "#866abd" }} onClick={(event) => handleEdit(workout._id,event)}>
                                           <PencilFill />
                                       </Button>

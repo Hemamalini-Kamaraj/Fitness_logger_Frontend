@@ -47,9 +47,9 @@ function Exercises() {
     }
 
   return (
-    <div>  
+    <div className='min-vh-100 d-flex flex-column justify-content-between'>  
           <NavBar />
-          <Container className='mt-5 justify-content-center text-center min-vh-100' style={{width:"90rem"}}>
+          <Container className='mt-5 justify-content-center text-center' style={{width:"90rem"}}>
               <Row>
                   <h4 className='text-white fw-bold'>Exercise List</h4>
               </Row>

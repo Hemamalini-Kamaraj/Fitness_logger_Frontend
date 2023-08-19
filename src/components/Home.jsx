@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom';
 function Home() {
 
   return (
-      <div className='bg-white'>  
+      <div className='bg-white d-flex flex-column justify-content-between min-vh-100'>  
           <NavBar />
-          <Container fluid className='justify-content-center text-center min-vh-100'>
+          <Container fluid className='justify-content-center text-center '>
             <Row className='mt-5'>
               <Link to='/recordActivity'><Image src={poster} style={{width:"90rem"}}></Image></Link>
             </Row>

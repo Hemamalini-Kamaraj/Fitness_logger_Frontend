@@ -16,6 +16,11 @@ body {
     background-size: cover;
     /* height: 100%; */
 }
+/* .footer__style{
+ position: fixed;
+ left: 0;
+ bottom: 0;
+} */
 
 /* .bg {
     min-height: 100vh;

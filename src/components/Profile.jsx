@@ -44,9 +44,9 @@ function Profile() {
     }
 
   return (
-    <div>  
+    <div className='d-flex flex-column justify-content-between min-vh-100'>  
           <NavBar />
-          <Container className='mt-5 justify-content-center text-center min-vh-100' style={{width:"35rem"}}>
+          <Container className='justify-content-center text-center' style={{width:"35rem"}}>
               <Row className='justify-content-center mt-4'>
                   <Card style={{width:"50rem"}} className='rounded-5'>
                       <Card.Header className='fs-5 rounded-5 mt-2 text-white fw-bold' style={{backgroundColor:"#270c42"}}>User Profile</Card.Header>
