@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Button, Row, Container, Card, Form } from "react-bootstrap";
 import logo from "../assets/logo.jpg";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import baseUrl from "../api/api";
 
 
@@ -9,6 +9,8 @@ function ResetPassword() {
   let [password, setPassword] = useState("");
   let [cPassword, setcPassword] = useState("");
   let [resetToken, setResetToken] = useState("");
+
+  const navigate = useNavigate();
 
   let { id } = useParams();
   useEffect(() => {
@@ -26,9 +28,8 @@ function ResetPassword() {
         baseUrl.patch(`/user/reset-password/${resetToken}`, {
           password: password,
         });
-        setPassword("");
-        setcPassword("");
         alert("Password changed Successfully!");
+        navigate("/")
       } else {
         alert("Password not matching");
       }
