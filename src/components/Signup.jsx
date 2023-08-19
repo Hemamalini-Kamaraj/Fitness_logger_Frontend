@@ -31,7 +31,7 @@ function Signup() {
     if (!users) {
       try {
         await baseUrl.post("/user/signup", userDetails);
-        alert("Account registered successfully.Kindly Verify your account");
+        alert("Account registered successfully.Kindly login");
       } catch (error) {
         console.error("Error Signing Up", error);
       }
