@@ -73,7 +73,7 @@ function FitnessSummary() {
   return (
     <div className='d-flex flex-column justify-content-between min-vh-100'>  
         <NavBar />
-        <Container fluid className='justify-content-center text-center mb-5' style={{width:"90rem"}}>
+        <Container fluid className='justify-content-center text-center mb-5'>
             <Row>
                 <h2 className='text-white fw-bold mt-4'>Fitness Summary</h2>
             </Row>

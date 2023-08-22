@@ -54,7 +54,7 @@ function TrackProgress() {
   return (
     <div className='bg-white d-flex flex-column justify-content-between min-vh-100'>  
         <NavBar />
-          <Container className='mt-5 justify-content-center text-center mb-5' style={{ width: "90rem" }}>
+          <Container className='mt-5 justify-content-center text-center mb-5'>
               <Row>
                   <Dropdown className='float-end'>
                         <Dropdown.Toggle id="dropdown-basic"className='fw-bold' style={{backgroundColor:"#866abd",border:"#866abd"}}>
@@ -85,8 +85,8 @@ function TrackProgress() {
                 </Row> 
                 : ""
             }
-              <Container className='justify-content-center' style={{width:"50rem"}}>
-                  <Row className='mt-5' >
+              <Container className='justify-content-center'>
+                  <Row className='mt-5 text-center' >
                     <Line data={{
                         labels: userWorkout.map(workout=>dayjs(workout.day.slice(0,10)).format("DD-MM-YYYY")),
                         datasets: [{
@@ -94,9 +94,10 @@ function TrackProgress() {
                             label: dropdownTitle,
                             fill: false,
                             borderColor: "#866abd",
-                            tension: 0.2
-                        }]
-                    }} />
+                            tension: 0.2,
+                          }],
+                      }}
+                      height={100}/>
               </Row>
               </Container>
           </Container>

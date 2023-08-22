@@ -13,7 +13,7 @@ function Home() {
           <NavBar />
           <Container fluid className='justify-content-center text-center '>
             <Row className='mt-5'>
-              <Link to='/recordActivity'><Image src={poster} style={{width:"90rem"}}></Image></Link>
+              <Link to='/recordActivity'><Image src={poster} style={{width:"90rem"}} className='img-fluid'></Image></Link>
             </Row>
           </Container>
         <Footer /> 
